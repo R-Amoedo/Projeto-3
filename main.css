@@ -1,0 +1,81 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background-color: #787675;
+    border-bottom: 1px gold solid;
+}
+
+#cabecalho .nav .nav-link.active {
+    background-color: gold;
+    color: black;
+}
+
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    background-color: #a8a2a1;
+}
+
+.section-title {
+    font-family: 'Black Ops One', cursive;
+}
+
+#produtos {
+    background-color: #847c7a;
+}
+
+#cadastro, #eventos {
+    background-color: #a8a2a1;
+}
+
+.text-colored {
+    color: gold;
+}
+
+.text-colored-bk {
+    color: black;
+}
+
+.text-colored-gr {
+    color: rgb(233, 227, 227);
+}
+
+.nav-cardapio .nav-link.active,
+#cadastro button,
+.bot-vend {
+    background-color: gold;
+    color: black;
+}
+
+.nav-cardapio .nav-link:hover {
+    color: gold;
+}
+
+.social-links li {
+    list-style: none;
+    display: inline;
+}
+
+.social-links a {
+    text-decoration: none;
+}
+
+.cor-bord {
+    border: gold solid 1px;
+    margin: 3px 2px 3px 2px;
+}
+
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px;
+        
+    }
+}
+

@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 3 - Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+    
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-2" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 section-title text-colored-bk">Ebac <span class="text-colored-gr">Airsoft </span><span class="text-colored">Games</span></h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold section-title">
+                        <a href="#sobre-a-loja" class="nav-link">
+                            <i class="bi bi-house-door me-1"></i>
+                            Quem somos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold section-title">
+                        <a href="#eventos" class="nav-link">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold section-title">
+                        <a href="#produtos" class="nav-link">
+                            <i class="bi bi-card-text me-1"></i>
+                            Produtos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold section-title">
+                        <a href="#cadastro" class="nav-link">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Cadastro
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section>
+            <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img class="w-100 h-30" src="./img/capa1.png" alt="Atirador com Sniper">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img class="w-100 h-30" src="./img/capa2.jpg" alt="Luva Segurando Esfera">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img class="w-100 h-30" src="./img/capa3.png" alt="Quatro Soldados Armados">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img class="w-100 h-30" src="./img/capa4.png" alt="Atirador Selecionando Alvo">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="2000">
+                        <img class="w-100 h-30" src="./img/capa5.png" alt="Fuzil M4A1 M-16">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="4"></button>
+                </div>
+            </div>
+            <div class="pt-5 pb-5">
+                <div class="container" id="sobre-a-loja">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="./img/logo-airsoft.png" class="d-block w-100 rounded" alt="Logo da loja">
+                        </div>
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title text-colored-bk">Quem <span class="text-colored">somos</span></h2>
+                            <p>
+                                Somos a Escola Britânica de Artes Criativas & Tecnologia (EBAC) uma instituição de ensino inovadora que oferece cursos online, além de programas de pós-graduação e especialização.
+                            </p>
+                            <h3 class="section-title text-colored-bk">Qual <span class="text-colored">Obijetivo</span></h3>
+                            <p>
+                                Com o intuito de tirar aquele peso do dia a dia, e dar a todos uma dose de adrenalina e diversão criamos a Ebac Airsoft Games.
+                            </p>
+                            <h3 class="section-title text-colored-bk">Quem <span class="text-colored">atendemos</span></h3>
+                            <p>
+                                Feita para atender principalmente nossos funcionários e alunos e pessoas cadastradas em nosso site. 
+                            </p>
+                            <ul>
+                                <h3 class="section-title text-colored-bk">Terrenos</h3>
+                                <li>Floresta com ou sem estruturas</li>
+                                <li>Campo aberto com estruturas</li>
+                                <li>Montes e morros arenosos</li>
+                                <li>Galpão fexado com estruturas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="eventos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center text text-colored-bk">Nossos <span class="text-colored">Eventos</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img src="img/eventos/bandeira.jpg" alt="" class="d-block w-100 rounded mb-2 cor-bord">
+                        <h3 class="section-title text-colored-bk fs-4">
+                            <i class="bi bi-flag-fill text-colored"></i>
+                            Capitura de Bandeira
+                        </h3>
+                        <p>
+                            Objetivo capturar a bandeira do adversário. A bandeira capturada tem que estar visível a todos os participantes. Há duas variações: a bandeira viva, onde a bandeira fica no local onde o jogador que a estava carregando foi atingido, a disposição do próximo jogador e abandeira morta, que é levada de volta a sua origem se o jogador que a portar seja eliminado.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/eventos/holdline.png" alt="" class="d-block w-100 rounded mb-2 cor-bord">
+                        <h3 class="section-title text-colored-bk fs-4">
+                            <i class="bi bi-bricks text-colored"></i>
+                            Manter a Linha
+                        </h3>
+                        <p>
+                            Um grupo de vinte jogadores defenderam a posição fortificada no centro do mapa até o grupo de apoio chegar, ganham se atinjir o tempo limite ou matarem todos os inimigos que avançam sobre eles, jogo estimado para 80 jogadores, cada inimigo tem até 2 respaw.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/eventos/juggernaut.png" alt="" class="d-block w-100 rounded mb-2 cor-bord">
+                        <h3 class="section-title text-colored-bk fs-4">
+                            <i class="bi bi-shield-shaded text-colored"></i>
+                            Missão Juggernaut
+                        </h3>
+                        <p>
+                            Dez Juggernauts espalhados em grupos para assegurarem quatro pontos no mapa, missão para oitenta jogadores, somente pistolas e fuzils são permitidas, cada juggernaut tem dez baloes vermelhos em sua suit onde se forem eliminados o juggernaut morre, jogadores tem até 3 respaw, ganham se eliminarem todos os juggernauts.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/eventos/kill-gaz.jpg" alt="" class="d-block w-100 rounded mb-2 cor-bord">
+                        <h3 class="section-title text-colored-bk fs-4">
+                            <i class="bi bi-radioactive text-colored"></i>
+                            Missão Gás Mortal
+                        </h3>
+                        <p>
+                            Nessa modalidade, os terroristas tem a missão de roubar um cilindro com um gás mortal que fica no quartel do exército e levar o cilindro de volta a base, a missão do exército é evitar que os cilindros sejam roubados e resgatar o cientista que está preso no acampamento terrorista. Ambas as equipes dividem o seu grupo para a execução da missão.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/eventos/kill-team.png" alt="" class="d-block w-100 rounded mb-2 cor-bord">
+                        <h3 class="section-title text-colored-bk fs-4">
+                            <i class="bi bi-people-fill text-colored"></i>
+                            Mata Mata
+                        </h3>
+                        <p>
+                            Nessa modalidade, duas equipes combatem entre si, vencendo a partida a equipe que conseguir eliminar todos os jogadores da equipe adversária, podendo ter limite de tempo, nesse caso, se o tempo chegar ao fim, a equipe com maior número de jogadores vivos é a vencedora.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/eventos/refens.jpg" alt="" class="d-block w-100 rounded mb-2 cor-bord">
+                        <h3 class="section-title text-colored-bk fs-4">
+                            <i class="bi bi-people-fill text-colored"></i>
+                            Missão Resgate aos Refens
+                        </h3>
+                        <p>
+                            Uma equipe é dividida entre reféns e resgate e os jogadores da outra equipe são os guardas. Os reféns serão colocados em diferentes localizações, e a equipe de resgate deve localizá-los e resgatá-los. Os reféns podem tentar fugir, mas é permitido serem eliminados caso tentem. Para que a equipe de resgate vença, é preciso resgatar no mínimo 50% dos reféns.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/eventos/resgate.png" alt="" class="d-block w-100 rounded mb-2 cor-bord">
+                        <h3 class="section-title text-colored-bk fs-4">
+                            <i class="bi bi-heart-pulse-fill text-colored"></i>
+                            Missão Soldado Ferido
+                        </h3>
+                        <p>
+                            Um grupo de soldados foram atacados no posto avançado onde somente um sobreviveu e está ferido, os jogadores são divididos em dois times na proporção de 1/3, o obijetivo do exército é resgatar o soldado, para isso teram que carregalo pelo campo de batalha enfrentando hordas de inimigos, ganham chegando com o soldado na zona segura.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/eventos/sniper.png" alt="" class="d-block w-100 rounded mb-2 cor-bord">
+                        <h3 class="section-title text-colored-bk fs-4">
+                            <i class="bi bi-plus-circle-dotted text-colored"></i>
+                            Missão Caçada aos Snipers
+                        </h3>
+                        <p>
+                            Nessa modalidade, são espalhados dez snipers pelo campo de batalha, onde secenta jogadores são divididos em três times vão caça-los, ganha a partida o grupo que sobreviver e conseguir eliminaar todos os snipers da partida.
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/eventos/swat.png" alt="" class="d-block w-100 rounded mb-2 cor-bord">
+                        <h3 class="section-title text-colored-bk fs-4">
+                            <i class="bi bi-people-fill text-colored"></i>
+                            SWAT - Eliminação de Terroristas
+                        </h3>
+                        <p>
+                            Os membros do time da SWAT, que devem ser um quarto dos jogadores, devem eliminar todos os terroristas, ou seja, os membros da equipe adversária. As regras para essa modalidade permitem que haja civis no meio da partida, em diversas localizações, que não podem ser eliminados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="produtos" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5 text-colored-bk">
+                        Nosso <span class="text-colored">Produtos</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                        <aside>
+                            <nav class="nav nav-pills flex-column nav-cardapio">
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#personalizado" class="fw-bold text-start nav-link text-colored-bk active">Kits de Temas</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#kit" class="fw-bold text-start nav-link text-colored-bk">Kits de Armas</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#acessorio" class="fw-bold text-start nav-link text-colored-bk">Acessorios</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#municao" class="fw-bold text-start nav-link text-colored-bk">Munição e Alvos</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#bateria" class="fw-bold text-start nav-link text-colored-bk">Baterias/CO2</button>
+                            </nav>
+                        </aside>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="personalizado">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kit-personalizado/black-ops.jpg" alt="Kit-Black-Ops">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Black-Ops</h5>
+                                        <p class="mb-2">
+                                            Vem com uma snipe M-21 + colete e luvas Pretas + recipiente de esferas em formato de granada + pistola e faca tática.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kit-personalizado/bravo-comp.jpg" alt="Kit-Bravo-Company">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Bravo Company</h5>
+                                        <p class="mb-2">
+                                            Vem com um fuzil M-4 de coronha rebativel + Boné personalizado Bravo Company + Biniculos + Pistola 9mm.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kit-personalizado/dirt-usa.jpg" alt="Kit-Dirt-Usa">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Exército USA</h5>
+                                        <p class="mb-2">
+                                            Vem com um suzil Scar com mira laser + colete + farda + elmo com binôculo + camoflagens (deserto, floresta, construção e black-ops).
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kit-personalizado/ingl-arm.jpg" alt="Kit-Inglês-Arms">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Ingês Arms</h5>
+                                        <p class="mb-2">
+                                            Vem com um fusil L-85 + colete + farda.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kit-personalizado/nypd.jpg" alt="Kit-NYPD">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> New York Police</h5>
+                                        <p class="mb-2">
+                                            Vem com um AR-15 + farda + colete + pistola 9mm + oktok.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kit-personalizado/russ-ak.jpg" alt="Kit-RUSS-AK">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Operador AK-47</h5>
+                                        <p class="mb-2">
+                                            Vem com um fuzil AK-47 com mira laser + boné e óculos + radio transmissor e pistola + maleta para transporte.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kit-personalizado/terror.jpg" alt="Kit-Alemão">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Alemão - Terror</h5>
+                                        <p class="mb-2">
+                                            Vem com um fuzil G-36 com mira laser + mascara negra + farda negra + pistola 9mm.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kit-personalizado/batedor.jpg" alt="Kit-Batedor">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Batedor</h5>
+                                        <p class="mb-2">
+                                            Vem com um fuzil AR-15 mira laser e silênciador + snipe Tac-300 com mira telescópica + chapéu, bota e luva + pistola 9mm.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="kit">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kits/fuzil1.jpg" alt="Fuzil">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> AK-47</h5>
+                                        <p>
+                                            Vem com uma AK-47 eletrica com bateria + carregador, alvo + munição da Lancer Tatical 0.20G.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kits/fuzil2.jpg" alt="Fuzil">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> AK-400</h5>
+                                        <p>
+                                            Vem com uma AK-400 + mira Red Dot + maleta + 5 alvos + munição BBs 0.20G.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kits/fuzil3.jpg" alt="Fuzil">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> M4A1 Colt</h5>
+                                        <p>
+                                            Vem com uma M4A1 Colt + Glock G-19 + 2 alvos + munição MDC Tatical 0.20G.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kits/fuzil4.jpg" alt="Fuzil">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> M4A1 M-16</h5>
+                                        <p>
+                                            Vem com uma M4A1 M-16 + Glock G-19 + óleo + faixa + coldre + munição BBs 0.20G.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kits/fuzil5.png" alt="Fuzil">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Scar</h5>
+                                        <p>
+                                            Vem com uma Scar coronha estençora e rebativel + maleta + óculos 3 lentes + munição da Lancer Tatical 0.20G.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kits/pistola1.jpg" alt="Pistola">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> KL93-A3</h5>
+                                        <p>
+                                            Vem com uma KL93-A3 a gáz + 10 cilindros CO-2 Crosman + maleta + 2 óleos + 1 alvo + 2 munição 300 MDC.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kits/pistola2.jpg" alt="Pistola">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Glock G-19</h5>
+                                        <p>
+                                            Vem com uma Glock G-19 a gáz + 10 cilindros CO-2 Crosman + maleta + óleo + 2 alvos + munição MDC.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kits/pistola3.jpg" alt="Pistola">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Desert Eagle</h5>
+                                        <p>
+                                            Vem com uma Desert Eagle + 4 alvos + munição BBs 0.12G.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kits/revolver1.jpg" alt="Revolver">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Magnum .357</h5>
+                                        <p>
+                                            Vem com uma magnum a gáz + 5 cilindros Asd/L + 2000 munição BB King 0.20G.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kits/revolver2.jpg" alt="Revolver">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Magnum .44</h5>
+                                        <p>
+                                            Vem com uma magnum a gáz + 5 cilindros + óleo + 2000 munição BB King 0.20G.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kits/smg1.jpg" alt="SMG">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> MP2A1</h5>
+                                        <p>
+                                            Vem com uma MP2A1 (UzI) a gaz + 5 cilindros CO-2 Leão + óleo + oculos + 50 alvos + 5 munição 300 cada.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kits/smg2.jpg" alt="SMG">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> MP-5</h5>
+                                        <p>
+                                            Vem com uma MP-5 + colete tático + maleta.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kits/smg3.jpg" alt="SMG">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> MP7A1</h5>
+                                        <p>
+                                            Vem com uma MP7A1 eletrica com bateria + 3 pesnts + 2 trilhos picatinny.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kits/sniper1.jpg" alt="Sniper">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> M-24</h5>
+                                        <p>
+                                            Vem com uma M-24 + bipé + luneta 4X32, 100 alvos 14cm/14cm, maleta e 10000 munição BBs Nautika 0.20G.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kits/sniper2.jpg" alt="Sniper">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> M40A3</h5>
+                                        <p>
+                                            Vem com uma M40A3 com luneta + carregador + dois pents + 50 alvos e 1000 munição Rossi 0.30G.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/kits/lmg.png" alt="LMG">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> MK-46</h5>
+                                        <p>
+                                            Vem com uma MK-46 eletrica com bateria + carregador, óleo e 3000 munição 0.20G.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="acessorio">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/colete1.jpg" alt="Colete">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Col. Tático</h5>
+                                        <p>
+                                            Tamanho P, M, G e GG, nas cores preto, azul, verde, creme, tambem camuflado floresta, deserto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/colete2.jpg" alt="Colete">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Col. Simples</h5>
+                                        <p>
+                                            Tamanho P, M, G e GG nas cores preto, azul, verde, creme, tambem camuflado floresta, deserto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/colete3.jpg" alt="Colete">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Col. Skull</h5>
+                                        <p>
+                                            Tamanho P, M, G e GG nas cores preto, azul, verde, creme, tambem camuflado floresta, deserto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/colete4.png" alt="Colete">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Col. Resv. Água</h5>
+                                        <p>
+                                            Tamanho P, M, G e GG nas cores preto, azul, verde, creme, tambem camuflado floresta, deserto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/helm1.jpg" alt="Helmet">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Helm Black Ops</h5>
+                                        <p>
+                                            Tamannho P, M, G e GG nas cores preto, azul, verde, creme, tambem camuflado floresta, deserto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/helm2.png" alt="Helmet">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Helm Simples</h5>
+                                        <p>
+                                            Tamannho P, M, G e GG nas cores preto, azul, verde, creme, tambem camuflado floresta, deserto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/helm3.jpg" alt="Helmet">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Helm Frontal</h5>
+                                        <p>
+                                            Tamannho P, M, G e GG nas cores preto, azul, verde, creme, tambem camuflado floresta, deserto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/helm4.jpg" alt="Helmet">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Helm W-Ronin</h5>
+                                        <p>
+                                            Tamannho P, M, G e GG nas cores preto, azul, verde, creme, tambem camuflado floresta, deserto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/mira1.jpg" alt="Mira">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Mira Red Dot</h5>
+                                        <p>
+                                            Alcance 1X ponto vermelho/verde trilho 22MM disparo rápido.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/mira2.jpg" alt="Mira">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Mira Holográfica</h5>
+                                        <p>
+                                            Alcance 1X ponto cross vermelho/verde trilho 22MM disparo rápido.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/mira3.jpg" alt="Mira">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Mira Red Dot</h5>
+                                        <p>
+                                            Alcance 1X30MM ponto vermelho/verde trilho 22MM disparo rápido.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/mira4.jpg" alt="Mira">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Mira Prismática</h5>
+                                        <p>
+                                            Alcance 1X30MM cross atirador vermelho/verde trilho 22MM disparo rápido.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/oculos1.jpg" alt="Oculos">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Oculos Grade</h5>
+                                        <p>
+                                            Nas cores preto, azul, verde, creme, tambem camuflado floresta, deserto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/oculos2.jpg" alt="Oculos">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Oculos Cross</h5>
+                                        <p>
+                                            Nas cores preto, azul, verde, creme, tambem camuflado floresta, deserto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/oculos3.jpg" alt="Oculos">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Oculos Visor</h5>
+                                        <p>
+                                            Nas cores preto, azul, verde, creme, tambem camuflado floresta, deserto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/oculos4.jpg" alt="Oculos">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Ocl. Cross Grd</h5>
+                                        <p>
+                                            Nas cores preto, azul, verde, creme, tambem camuflado floresta, deserto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/roupa1.png" alt="Roupa">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Black Ops</h5>
+                                        <p>
+                                            Tamanhos P, M, G e GG, masculino e feminino, nas cores preto, azul, verde, creme, tambem camuflado floresta, deserto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/roupa2.png" alt="Roupa">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> USA camo.</h5>
+                                        <p>
+                                            Tamanhos P, M, G e GG, masculino e feminino, nas cores preto, azul, verde, creme, tambem camuflado floresta, deserto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/roupa3.jpg" alt="Roupa">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Snipe camo.</h5>
+                                        <p>
+                                            Tamanhos P, M, G e GG, masculino e feminino, nas cores preto, azul, verde, creme, tambem camuflado floresta, deserto.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/acessorios/roupa4.jpg" alt="Roupa">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Juggernaut</h5>
+                                        <p>
+                                            Tamanhos P, M, G e GG, masculino e feminino, única camoflagem.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="municao">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/municao-alvos/alvo1.jpg" alt="Alvos-para-Treino">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Alv. Prime Gun</h5>
+                                        <p>
+                                            Alvo de metal com capacidades de 4, 5, 7 alvos.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/municao-alvos/alvo2.png" alt="Alvos-para-Treino">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Alv. Rossi</h5>
+                                        <p>
+                                            Alvos em lotes de 20, 30, 40, 50 unidades em papel.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/municao-alvos/alvo3.jpg" alt="Alvos-para-Treino">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Alv. Rossi</h5>
+                                        <p>
+                                            Alvos em lotes de 20, 30, 40, 50 unidades em papel.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/municao-alvos/alvo4.jpg" alt="Alvos-para-Treino">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Alv. Prime Gun</h5>
+                                        <p>
+                                            Alvos em lotes de 20, 30, 40, 50 unidades em papel.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/municao-alvos/municao1.jpg" alt="Munição">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Mun. MCD</h5>
+                                        <p>
+                                            Frasco ou pacote com 500 à 3000 esferas BBs, de 0.12g à 0.50g.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/municao-alvos/municao2.jpg" alt="Munição">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Mun. G&G Arm</h5>
+                                        <p>
+                                            Frasco ou pacote com 500 à 3000 esferas BBs, de 0.12g à 0.50g.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/municao-alvos/municao3.jpg" alt="Munição">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Mun. Rossi</h5>
+                                        <p>
+                                            Frasco ou pacote com 500 à 3000 esferas BBs, de 0.12g à 0.50g.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/municao-alvos/municao4.jpg" alt="Munição">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Mun. QGK</h5>
+                                        <p>
+                                            Frasco ou pacote com 500 à 3000 esferas BBs, de 0.12g à 0.50g.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="bateria">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/bateria-co2/bateria1.jpg" alt="Bateria">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Bat. Target </h5>
+                                        <p>
+                                            Bateria de lítio de 1200mAh, pacotes com 4, 6, 10 e 20 unidades.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/bateria-co2/bateria2.jpg" alt="Bateria">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Bat. Leão</h5>
+                                        <p>
+                                            Bateria de lítio de 1700mAh, pacotes com 4, 6, 10 e 20 unidades.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/bateria-co2/bateria3.jpg" alt="Bateria">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Bat. Genérica</h5>
+                                        <p>
+                                            Bateria de lítio de 1100mAh, pacotes com 4, 6, 10 e 20 unidades.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/bateria-co2/bateria4.jpg" alt="Bateria">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Bat. KPP</h5>
+                                        <p>
+                                            Bateria de lítio de 1300mAh, pacotes com 4, 6, 10 e 20 unidades.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/bateria-co2/bateria5.jpg" alt="Bateria">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Bat. Leão</h5>
+                                        <p>
+                                            Bateria de lítio de 1100mAh, pacotes com 4, 6, 10 e 20 unidades.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/bateria-co2/bateria6.jpg" alt="Bateria">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Bat. FEASSO</h5>
+                                        <p>
+                                            Bateria de lítio de 1500mAh, pacotes com 4, 6, 10 e 20 unidades.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/bateria-co2/co2-1.jpg" alt="CO-2">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Cil. Cartridge</h5>
+                                        <p>
+                                            Cilindro com 12g de CO-2, pacotes com 30, 40, 50 e 100 unidades.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/bateria-co2/co2-2.jpg" alt="CO-2">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Cil. Rossi</h5>
+                                        <p>
+                                            Cilindro com 12g de CO-2, pacotes com 30, 40, 50 e 100 unidades.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/bateria-co2/co2-3.png" alt="CO-2">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Cil. Leão</h5>
+                                        <p>
+                                            Cilindro com 12g de CO-2, pacotes com 30, 40, 50 e 100 unidades.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/bateria-co2/co2-4.png" alt="CO-2">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Cil. Crosman</h5>
+                                        <p>
+                                            Cilindro com 12g de CO-2, pacotes com 30, 40, 50 e 100 unidades.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/bateria-co2/co2-5.png" alt="CO-2">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Cil. Puff Dino</h5>
+                                        <p>
+                                            Cilindro com 12g de CO-2, pacotes com 30, 40, 50 e 100 unidades.
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100 rounded cor-bord" src="img/bateria-co2/co2-6.png" alt="CO-2">
+                                        <h5 class="text-colored fw-bold mt-2"><button type="submit" class="btn fw-bold bot-vend bi bi-box-arrow-in-right fs-3 py-0" href="#"></button> Cil. Aurok</h5>
+                                        <p>
+                                            Cilindro com 12g de CO-2, pacotes com 30, 40, 50 e 100 unidades.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="cadastro" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center mb-5 text-colored-bk">Faça seu <span class="text-colored">Cadastro</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 col-lg-6 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored-bk">Seu <span class="text-colored">Nome</span></label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored-bk">Seu <span class="text-colored">E-mail</span></label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored-bk">Seu <span class="text-colored">Telefone</span></label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label fw-bold text-colored-bk">Sua <span class="text-colored">Senha</span></label>
+                                <input type="password" id="password1" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label fw-bold text-colored-bk">Confirmar <span class="text-colored">Senha</span></label>
+                                <input type="password" id="password2" class="form-control">
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5 col-lg-6 text-center ">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored-bk">
+                                <i class="bi bi-hand-thumbs-up-fill text-colored"></i>
+                                Não deixe de nos seguir
+                            </h3>
+                            <ul class="social-links ">
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-facebook text-colored-bk"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="#">
+                                        <i class="bi bi-instagram text-colored-bk"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-telegram text-colored-bk"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#">
+                                        <i class="bi bi-youtube text-colored-bk"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored-bk">
+                                <i class="bi bi-cursor-fill text-colored"></i>
+                                Venha nos visitar
+                            </h3>
+                            <p>
+                                Rua Projeto nº 404, Bairro Bootstrap - São Paulo - SP
+                            </p>
+                            <p>
+                                Rua Index nº 417, Bairro Boot - Rio de Janeiro - RJ
+                            </p>
+                            <p>
+                                Rua Css nº 501, Bairro Strap - Joinville - SC
+                            </p>
+                            <p>
+                                Rua Html nº 503, Bairro Strapboot - Macapá - AP
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
